@@ -1,0 +1,203 @@
+
+body, h1, h2, p, table {
+  font-family: 'Arial', sans-serif;
+}
+
+
+.page2 {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+ 
+}
+
+
+.applications-section {
+  flex: 1;
+  padding: 50px 20px 20px 20px;
+}
+
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.container {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+
+.subtitle {
+  font-size: 16px;
+  
+  margin-bottom: 20px;
+}
+
+
+.nav-link {
+  cursor: pointer;
+  margin-right: 5px;
+  border-radius: 5px;
+  
+  color: #000;
+  text-transform: capitalize;
+}
+
+.applications-filter .nav-link.active {
+  color: white !important;
+  background-color: #0d6efd; 
+}
+
+
+.table-responsive {
+  margin-top: 20px;
+}
+
+.table th, .table td {
+  vertical-align: middle !important;
+}
+
+.badge.pending {
+  background-color: #6c757d;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 12px;
+}
+
+.badge.interviewing {
+  background-color: #ffb100;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 12px;
+}
+
+.badge.offered {
+  background-color: #198754;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 12px;
+}
+
+.badge.rejected {
+  background-color: #dc3545;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 12px;
+}
+
+/* زر التفاصيل */
+.btn-outline-primary {
+  font-size: 14px;
+}
+
+/* تنسيقات حالة الطلب */
+.status-badge {
+  padding: 0.35rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  border: 1px solid transparent;
+}
+
+.status-applied {
+  background-color: #e3f2fd;
+  color: #1976d2;
+  border-color: #bbdefb;
+}
+
+.status-pending {
+  background-color: #fff3e0;
+  color: #f57c00;
+  border-color: #ffe0b2;
+}
+
+.status-approved {
+  background-color: #e8f5e8;
+  color: #2e7d32;
+  border-color: #c8e6c9;
+}
+
+.status-rejected {
+  background-color: #ffebee;
+  color: #c62828;
+  border-color: #ffcdd2;
+}
+
+/* تنسيقات الفلتر */
+.applications-filter .nav-link {
+  color: #6c757d;
+  border-radius: 25px;
+  margin: 0 0.25rem;
+  transition: all 0.3s ease;
+}
+
+.applications-filter .nav-link.active {
+  background-color: #007bff;
+  color: white;
+  font-weight: 600;
+}
+
+.applications-filter .nav-link:hover:not(.active) {
+  background-color: #f8f9fa;
+  color: #495057;
+}
+
+/* تنسيقات الجدول */
+.table th {
+  background-color: #f8f9fa;
+  font-weight: 600;
+  color: #495057;
+  border-bottom: 2px solid #dee2e6;
+}
+
+.table td {
+  vertical-align: middle;
+  padding: 1rem 0.75rem;
+}
+
+/* تنسيقات عامة */
+.applications-section {
+  background-color: #f8f9fa;
+  min-height: 100vh;
+}
+
+.applications-section h1 {
+  color: #2c3e50;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.applications-section h2 {
+  color: #34495e;
+  font-weight: 600;
+}
+
+.subtitle {
+  color: #7f8c8d;
+  margin-bottom: 1.5rem;
+}
+
+.extra-margin {
+  margin-top: 2rem;
+}
+
+/* تنسيقات responsive */
+@media (max-width: 768px) {
+  .applications-filter .nav-link {
+    margin: 0.25rem;
+    font-size: 0.875rem;
+  }
+  
+  .table-responsive {
+    font-size: 0.875rem;
+  }
+  
+  .status-badge {
+    font-size: 0.75rem;
+    padding: 0.25rem 0.5rem;
+  }
+}

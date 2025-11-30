@@ -1,0 +1,103 @@
+
+body {
+  background: linear-gradient(135deg, #f5f7fa, #f1f6ff, #dadcdf);
+}
+
+
+.my-btn {
+  color: #112548;
+  border: 1px solid #112548;
+  background-color: transparent;
+}
+
+.my-btn:hover,
+.my-btn:focus {
+  background-color: #112548;
+  color: #fff;
+  border-color: #112548;
+}
+
+.my-btn:active {
+  background-color: #0d1a32;
+  border-color: #0d1a32;
+}
+
+
+.form-check-input:checked {
+  background-color: #112548;
+  border-color: #112548;
+}
+
+.form-check-input:focus {
+  box-shadow: 0 0 0 0.25rem rgba(17, 37, 72, 0.25);
+}
+
+/* Slider */
+input[type="range"].form-range {
+  position: relative !important;
+  display: block !important;
+  margin-top: 0.5rem;
+}
+
+input[type="range"].form-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background: #112548;
+  cursor: pointer;
+}
+
+input[type="range"].form-range::-moz-range-thumb {
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background: #112548;
+  cursor: pointer;
+}
+.card {
+  transition: 0.3s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transform: translateY(-2px); 
+}
+/* زر View Details */
+.btn-outline-primary {
+  color: #112548;           /* نص أزرق غامق */
+  border-color: #112548;    /* حواف أزرق غامق */
+  background-color: #f1f6ff; /* خلفية فاتحة */
+}
+
+.btn-outline-primary:hover {
+  color: #fff;               /* النص يبقى أبيض */
+  background-color: #112548; /* خلفية غامقة عند hover */
+}
+
+/* زر Apply Salary */
+.btn-primary {
+  background-color: #f1f6ff; /* خلفية فاتحة */
+  color: #112548;            /* نص أزرق غامق */
+  border: 1px solid #112548; /* حواف */
+}
+
+.btn-primary:hover {
+  background-color: #112548; 
+  color: #fff;              
+}
+/* زر Apply Salary ثابت اللون */
+.btn-primary {
+  background-color: #112548;  /* لون الخلفية اللي عايزاه */
+  color: #fff;                /* لون النص */
+  border: 1px solid #112548;  /* نفس لون الخلفية للحواف */
+}
+
+/* منع أي تأثير عند Hover أو Focus */
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+  background-color: #112548 !important;  /* اللون ثابت */
+  color: #fff !important;               /* النص ثابت */
+  border-color: #112548 !important;     /* الحواف ثابتة */
+}

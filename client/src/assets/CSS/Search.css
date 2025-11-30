@@ -1,0 +1,79 @@
+
+   
+body {
+  background: linear-gradient(135deg, #f5f7fa, #f1f6ff, #dadcdf);
+}
+
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    }
+   
+    
+    
+html, body, #root {
+  height: 100%;
+}
+
+.flex-grow-1 {
+  min-height: calc(100vh - 80px - 60px); 
+}
+
+    
+.form-check-input:checked {
+  background-color: #112548;
+  border-color: #112548;
+}
+
+.form-check-input:focus {
+  box-shadow: 0 0 0 0.25rem rgba(17, 37, 72, 0.25);
+}
+
+.btn-fade-primary {
+  background-color: white; 
+  color: #112548;
+  border: 1px solid #112548;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-fade-primary:hover,
+.btn-fade-primary:active {
+  background-color: #112548; 
+  color: #ffffff; 
+}
+.btn-primary {
+  background-color: #112548 !important;
+  border-color: #112548 !important;
+}
+
+.btn-primary:hover,
+.btn-primary:active {
+  background-color: #0d1a33 !important; 
+  border-color: #0d1a33 !important;
+}
+
+ .footer-links>a:hover {
+     color: black !important;
+ }
+
+ .nav-item {
+     position: relative;
+ }
+
+ .nav-link::after {
+     content: "";
+     position: absolute;
+     left: 50%;
+     bottom: 0;
+     width: 0;
+     height: 2px;
+     background-color: #284c8a;
+     transition: all 0.3s ease-in-out;
+     transform: translateX(-50%);
+ }
+
+ .nav-link:hover::after,
+ .nav-link.active::after {
+     width: 100%;
+ }

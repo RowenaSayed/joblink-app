@@ -1,0 +1,111 @@
+:root {
+  --primary-custom: #3b5998;
+  --secondary-custom: #4a6fbb;
+  --accent: #10c168;
+  --light-bg: #f8f9fa;
+  --dark-text: #343a40;
+}
+* {
+  padding: 0;
+  margin: 0;
+  color: var(--dark-text);
+}
+.btn-primary-custom {
+  background-color: var(--secondary-custom);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.btn-primary-custom:hover {
+  background-color: var(--primary-custom);
+  color: white;
+}
+
+.btn-outline-primary-custom {
+  background-color: transparent;
+  color: var(--secondary-custom);
+  border: 1px solid var(--secondary-custom);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.btn-outline-primary-custom.active,
+.btn-outline-primary-custom:hover {
+  background-color: var(--secondary-custom);
+  color: white;
+}
+
+.btn-outline-custom {
+  background-color: transparent;
+  color: var(--accent);
+  border: 2px solid var(--accent);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.btn-outline-custom:hover {
+  background-color: var(--accent);
+  color: white;
+}
+
+.btn-outline-secondary-custom {
+  background-color: transparent;
+  color: var(--secondary-custom);
+  border: 2px solid var(--secondary-custom);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.btn-outline-secondary-custom:hover {
+  background-color: var(--secondary-custom);
+  color: white;
+}
+
+.nav-item.active {
+  color: var(--dark-text);
+  font-weight: bolder;
+}
+
+.hero {
+  height: 90vh;
+  background: linear-gradient(rgba(24, 37, 65, 0.8), rgba(59, 88, 152, 0.6)),
+    url("../images/landingImages/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.job-card {
+   transition: transform 0.3s;
+   cursor: pointer;
+}
+
+.job-card:hover {
+  transform: translateY(-5px);
+}
+
+.carousel-item > img {
+  opacity: 0.5;
+  transform: rotate(-45deg);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.carousel-item.active > img {
+  opacity: 1;
+  transform: rotate(0deg);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.5); 
+  border-radius: 50%;
+  background-size: 60%, 60%;
+  width: 3rem;
+  height: 3rem;
+}

@@ -1,0 +1,72 @@
+
+    :root{
+      --bg:#ffffff;           /* page background */
+      --card:#ffffff;         /* card background */
+      --ink:#0f172a;          /* dark text */
+      --muted:#6b7280;        /* secondary text */
+      --brand:#112548FF;        /* primary */
+      --accent:#112548FF;       /* button */
+      --success:#16a34a;      /* salary text */
+      --shadow: 0 10px 20px rgba(2,6,23,.06), 0 2px 6px rgba(2,6,23,.04);
+    }
+    .my-btn {
+  color: #112548;              
+  border: 1px solid #112548;   
+  background-color: transparent;
+}
+
+.my-btn:hover,
+.my-btn:focus {
+  background-color: #112548;   
+  color: #fff;                 
+  border-color: #112548;
+}
+
+.my-btn:active {
+  background-color: #0d1a32;   
+  border-color: #0d1a32;
+}
+
+
+
+
+    body{background:var(--bg); color:var(--ink);}    
+   
+   
+    .hero.jobseeker{
+      background:#eef2ff; border:1px solid #e5e7eb; border-radius:1rem; box-shadow:var(--shadow)
+    }
+    .card{border:0; box-shadow:var(--shadow);}
+    .kpi-card .kpi-number{font-size:2.2rem; font-weight:800;}
+    .searchbar .form-control{border-radius:999px; padding:.8rem 1.2rem}
+    .searchbar .btn{border-radius:999px ;background-color:#112548FF ;}
+    .job-card{transition: transform .22s ease, box-shadow .22s ease; border-radius:1rem}
+    .job-card:hover{transform: translateY(-2px); box-shadow: 0 16px 30px rgba(2,6,23,.12)}
+    .job-title{font-weight:700}
+    .job-meta{color:var(--muted); font-size:.9rem}
+    .salary{color:var(--success); font-weight:600}
+    .footer-links a{color:#6b7280; text-decoration:none}
+    .footer-links a:hover{text-decoration:underline}
+    .progress{height:.6rem}
+    /* Smooth focus */
+    .form-control, .btn{transition: box-shadow .2s ease, transform .15s ease}
+    .btn:active{transform: translateY(1px);color: #112548FF;}
+
+
+@media (max-width: 768px) {
+  .search-box {
+    width: 100%; 
+  }
+}
+
+    body {
+      background: url("https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1600&q=80") no-repeat center center fixed;
+      background-size: cover;
+      backdrop-filter: blur(10px);
+    }
+  
+    main {
+      background: rgba(255, 255, 255, 0.6);
+      backdrop-filter: blur(10px);
+  
+    }
